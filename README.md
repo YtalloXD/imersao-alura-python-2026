@@ -19,7 +19,7 @@ Antes de iniciar, certifique-se de ter instalado:
 
 - **Python 3.8+** ([Download](https://www.python.org/downloads/))
 - **pip** (gerenciador de pacotes Python - geralmente incluído com Python)
-- **Git** (opcional, para clonar o repositório)
+- **Git** (para clonar o repositório)
 
 ## 📦 Estrutura do Projeto
 
