@@ -178,7 +178,7 @@ Se preferir usar dados de uma URL remota em vez do arquivo local, você pode des
 
 ## 📄 Fonte dos Dados
 
-**Dataset Original**: [Kaggle - Data Science Salary Data](https://www.kaggle.com/datasets/ruchi798/data-science-salary-data)
+**Dataset Original**: [Dashboard - Dados de salários](https://raw.githubusercontent.com/vqrca/dashboard_salarios_dados/refs/heads/main/dados-imersao-final.csv)
 
 Os dados incluem informações de salários na área de dados de 2025, com representação global de múltiplos países.
 

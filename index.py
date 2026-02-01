@@ -172,24 +172,23 @@ with col_graf3:
         st.warning("Nenhum dado para exibir no gráfico dos tipos de trabalho.")
 
 with col_graf4:
-    if not df_filtrado.empty:
         # Conta o número de funcionários por país (independente da ocupação)
         # A função size() conta o número de linhas em cada grupo
-        contagem_paises = df_filtrado.groupby('employee_country').size().reset_index(name='employee_count')
         # Cria um mapa coroplético (choropleth) mostrando a distribuição global de funcionários
         # A cor mais intensa indica maior quantidade de funcionários
-        grafico_paises = px.choropleth(
-            contagem_paises,
-            locations='employee_country',
-            color='employee_count',
-            color_continuous_scale='Blues',
-            title='Número de funcionários por país',
-            labels={'employee_count': 'Quantidade de funcionários', 'employee_country': 'País'}
-        )
-        grafico_paises.update_layout(title_x=0.1)
-        st.plotly_chart(grafico_paises, use_container_width=True)
-    else:
-        st.warning("Nenhum dado para exibir no gráfico de países.")
+        if not df_filtrado.empty:
+            df_ds = df_filtrado[df_filtrado['job_title'] == 'Data Scientist']
+            media_ds_pais = df_ds.groupby('company_country')['salary_in_usd'].mean().reset_index()
+            grafico_paises = px.choropleth(media_ds_pais,
+                locations='company_country',
+                color='salary_in_usd',
+                color_continuous_scale='rdylgn',
+                title='Salário médio de Cientista de Dados por país',
+                labels={'salary_in_usd': 'Salário médio (USD)', 'company_country': 'País'})
+            grafico_paises.update_layout(title_x=0.1)
+            st.plotly_chart(grafico_paises, use_container_width=True)
+        else:
+            st.warning("Nenhum dado para exibir no gráfico de países.")
 
 # --- Tabela de Dados Detalhados ---
 # Exibe a tabela completa dos dados filtrados para inspeção detalhada
