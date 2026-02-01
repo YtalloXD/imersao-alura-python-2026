@@ -188,14 +188,6 @@ Os dados incluem informações de salários na área de dados de 2025, com repre
 
 - LinkedIn: [Reginaldo Ytalo Felix Mota](https://www.linkedin.com/in/reginaldo-ytalo-felix-mota/)
 
-## 🤝 Contribuições
-
-Contribuições são bem-vindas! Sinta-se livre para:
-
-- Reportar bugs
-- Sugerir novas funcionalidades
-- Fazer pull requests com melhorias
-
 ## 📄 Licença
 
 Este projeto é fornecido como está para fins educacionais e de análise.
