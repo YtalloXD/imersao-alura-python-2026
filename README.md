@@ -1,6 +1,7 @@
 # Dashboard de Análise de Salários na Área de Dados 📊
 
 Um aplicativo interativo construído com **Streamlit** para análise e visualização de dados salariais na área de dados e tecnologia. O dashboard oferece filtros dinâmicos, métricas de KPI e visualizações gráficas para explorar tendências salariais globais.
+Criado numa imersão do curso da Alura sobre Dados com Python.
 
 ## 📋 Funcionalidades
 
